@@ -45,7 +45,7 @@ def scrape_jobs():
         logging.info(f"Found {len(rows)} rows in the table")
 
         for row in rows[1:]: 
-                if len(jobs) >= 10:
+                if len(jobs) >= 25:
                     break
                 cells = row.find_elements(By.TAG_NAME, "td")
                 if len(cells) == 5:
